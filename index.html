@@ -49,7 +49,7 @@
 
     <section id="articles">
         <div class="articles">
-            <div class="article">
+            <div class="article" onclick=onlyPreview()>
                 <img src="Python.png" />
                 <h4>Python for absolute beginners</h4>
                 <p class="article-descr">
@@ -59,7 +59,7 @@
                 <p class="article-info">Feb 22, 2025</p>
             </div>
 
-            <div class="article">
+            <div class="article" onclick=onlyPreview()>
                 <img src="MachLear.png" />
                 <h4>Machine Learning with Python</h4>
                 <p class="article-descr">
@@ -69,7 +69,17 @@
                 <p class="article-info">Feb 22, 2025</p>
             </div>
 
-            <div class="article">
+            <div class="article" onclick=onlyPreview()>
+                <img src="JavaScript.png" />
+                <h4>JavaScript - Basics to advanced</h4>
+                <p class="article-descr">
+                    JavaScript is a popular programming
+                    language, often used for Web Development.
+                </p>
+                <p class="article-info">Feb 22, 2025</p>
+            </div>
+            
+            <div class="article" onclick=onlyPreview()>
                 <img src="Java.png" />
                 <h4>Java - Basics to advanced</h4>
                 <p class="article-descr">
@@ -105,6 +115,10 @@
         function hideSidebar() {
             const sidebar = document.querySelector(".sidebar");
             sidebar.style.display = "none";
+        }
+
+        function onlyPreview() {
+            window.alert('Das ist nur eine Vorschau. Die Artikel sind noch nicht verfügbar.')
         }
     </script>
 </body>
