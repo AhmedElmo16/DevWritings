@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevWritings</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Navigationsbar -->
+    <nav>
+        <!-- Sidebar -->
+        <ul class="sidebar">
+            <li onclick=hideSidebar()>
+                <a>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                        viewBox="0 -960 960 960" width="26px" fill="#f6f6f8">
+                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="logo" onclick=hideSidebar()>
+                <a href="#">writings.dev</a>
+            </li>
+            <li onclick=hideSidebar()><a href="#articles">Articles</a></li>
+            <li onclick=hideSidebar()><a href="#about">About</a></li>
+        </ul>
+
+        <!-- Navbar -->
+        <ul>
+            <li class="logo "><a href="#">writings.dev</a></li>
+            <li class="hideOnMobile"><a href="#articles">Articles</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="menu-btn btn" onclick=showSidebar()>
+                <svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                    viewBox="0 -960 960 960" width="26px" fill="#f6f6f8">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </li>
+        </ul>
+    </nav>
+
+    <!--* Hero -->
+    <section id="hero">
+        <img class="hero-img" src="logo.png" alt="[Logo]" />
+        <h1>Writings for Developers</h1>
+        <h3>Curated collection of articles for engaged developers</h3>
+    </section>
+
+    <section id="articles">
+        <div class="articles">
+            <div class="article">
+                <img src="Python.png" />
+                <h4>Python for absolute beginners</h4>
+                <p class="article-descr">
+                    Python is the most popular programming language out
+                    there and it is used for so many different industries.
+                </p>
+                <p class="article-info">Feb 22, 2025</p>
+            </div>
+
+            <div class="article">
+                <img src="MachLear.png" />
+                <h4>Machine Learning with Python</h4>
+                <p class="article-descr">
+                    Introduction to Machine Learning with Python and
+                    basic Algorithms.
+                </p>
+                <p class="article-info">Feb 22, 2025</p>
+            </div>
+
+            <div class="article">
+                <img src="Java.png" />
+                <h4>Java - Basics to advanced</h4>
+                <p class="article-descr">
+                    Java is a high-level, class-based, object-oriented
+                    programming language that is designed to have as few
+                    implementation dependencies as possible.
+                </p>
+                <p class="article-info">Feb 22, 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About <span class="highlight">Us</span></h2>
+        <p>
+            Writings.dev is a platform for developers to read <!-- TODO and 
+            write -->articles about programming, software development,
+            and technology. We are a community of developers who are
+            passionate about learning and sharing knowledge.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Writings.dev</p>
+    </footer>
+    <!-- Skript -->
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "flex";
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector(".sidebar");
+            sidebar.style.display = "none";
+        }
+    </script>
+</body>
+</html>
