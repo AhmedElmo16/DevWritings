@@ -153,6 +153,29 @@ nav a:hover {
 
 
 /* Artikel */
+/* Filter */
+.filter ul {
+    width: 80vw;
+    margin: 1.5rem;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.filter li {
+    border-radius: 12px;
+    padding: 0.5rem
+}
+
+.filter li:hover {
+    background-color: var(--secondary);
+    cursor: pointer;
+}
+
+/*Artikel*/
 #articles {
     margin-top: 3rem;
 }
