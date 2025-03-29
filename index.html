@@ -48,8 +48,17 @@
     </section>
 
     <section id="articles">
+        <div class="filter">
+            <ul>
+                <li class="python" onclick=filter(this)>Python</li>
+                <li class="javascript" onclick=filter(this)>JavaScript</li>
+                <li class="java" onclick=filter(this)>Java</li>
+                <li class="ai" onclick=filter(this)>AI</li>
+            </ul>
+        </div>
+        
         <div class="articles">
-            <div class="article" onclick=onlyPreview()>
+            <div class="article python" onclick=onlyPreview()>
                 <img src="Python.png" />
                 <h4>Python for absolute beginners</h4>
                 <p class="article-descr">
@@ -59,7 +68,7 @@
                 <p class="article-info">Feb 22, 2025</p>
             </div>
 
-            <div class="article" onclick=onlyPreview()>
+            <div class="article python ai" onclick=onlyPreview()>
                 <img src="MachLear.png" />
                 <h4>Machine Learning with Python</h4>
                 <p class="article-descr">
@@ -69,7 +78,7 @@
                 <p class="article-info">Feb 22, 2025</p>
             </div>
 
-            <div class="article" onclick=onlyPreview()>
+            <div class="article javascript" onclick=onlyPreview()>
                 <img src="JavaScript.png" />
                 <h4>JavaScript - Basics to advanced</h4>
                 <p class="article-descr">
@@ -79,7 +88,7 @@
                 <p class="article-info">Feb 22, 2025</p>
             </div>
             
-            <div class="article" onclick=onlyPreview()>
+            <div class="article java" onclick=onlyPreview()>
                 <img src="Java.png" />
                 <h4>Java - Basics to advanced</h4>
                 <p class="article-descr">
@@ -106,19 +115,12 @@
     </footer>
     <!-- Skript -->
     <script>
-        function showSidebar() {
-            const sidebar = document.querySelector(".sidebar");
-            sidebar.style.display = "flex";
-        }
-
-        function hideSidebar() {
-            const sidebar = document.querySelector(".sidebar");
-            sidebar.style.display = "none";
-        }
-
         function onlyPreview() {
-            window.alert('This is only a preview. The articles are not available yet.')
+            window.alert
+            ('This is only a preview. The articles are not available yet.');
         }
     </script>
+    <script src="sidebar.js"></script>
+    <script src="filter.js"></script>
 </body>
 </html>
